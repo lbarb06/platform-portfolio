@@ -389,7 +389,7 @@ resource "aws_db_instance" "app" {
   skip_final_snapshot     = true
   deletion_protection     = false
   multi_az                = var.enable_multi_az_db
-  backup_retention_period = 7
+  backup_retention_period = 1
 }
 
 data "aws_route53_zone" "main" {
