@@ -150,7 +150,7 @@ resource "aws_eks_cluster" "main" {
   enabled_cluster_log_types = var.cluster_enabled_log_types
 
   vpc_config {
-    subnet_ids              = data.terraform_remote_state.project_1.outputs.private_subnet_ids
+    subnet_ids              = data.terraform_remote_state.project_1.outputs.public_subnet_ids
     endpoint_private_access = true
     endpoint_public_access  = true
   }
@@ -166,7 +166,7 @@ resource "aws_eks_node_group" "main" {
   cluster_name    = aws_eks_cluster.main.name
   node_group_name = "${local.name_prefix}-node-group"
   node_role_arn   = aws_iam_role.eks_nodes.arn
-  subnet_ids      = data.terraform_remote_state.project_1.outputs.private_subnet_ids
+  subnet_ids      = data.terraform_remote_state.project_1.outputs.public_subnet_ids
   instance_types  = var.node_instance_types
   disk_size       = var.disk_size_gb
 

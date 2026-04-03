@@ -8,6 +8,11 @@ output "private_subnet_ids" {
   value       = [for s in aws_subnet.private : s.id]
 }
 
+output "public_subnet_ids" {
+  description = "Public subnet IDs for internet-reachable workloads"
+  value       = [for s in aws_subnet.public : s.id]
+}
+
 output "alb_dns_name" {
   description = "Public DNS name of the load balancer"
   value       = aws_lb.app.dns_name
