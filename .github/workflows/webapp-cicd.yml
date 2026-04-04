@@ -36,11 +36,8 @@ jobs:
       - name: Install Playwright browser
         run: npx playwright install --with-deps chromium
 
-      - name: Run UI tests (local app)
-        run: |
-          npm start &
-          npx wait-on http://127.0.0.1:3000
-          npm run test:ui
+      - name: Run UI tests
+        run: npm run test:ui
 
   build_and_gitops:
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
