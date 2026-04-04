@@ -228,6 +228,16 @@ resource "aws_security_group" "db" {
   }
 }
 
+resource "aws_security_group_rule" "rds_mysql_from_vpc" {
+  type              = "ingress"
+  from_port         = 3306
+  to_port           = 3306
+  protocol          = "tcp"
+  security_group_id = aws_security_group.rds.id
+  cidr_blocks       = [var.vpc_cidr]
+  description       = "Allow MySQL from VPC workloads (including EKS nodes)"
+}
+
 resource "aws_lb" "app" {
   name               = substr("${local.name_prefix}-alb", 0, 32)
   internal           = false
