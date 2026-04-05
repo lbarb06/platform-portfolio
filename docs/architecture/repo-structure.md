@@ -31,7 +31,7 @@ Recommended CODEOWNERS pattern:
 - `/terraform/02-k8s-platform/`
 - `/terraform/03-gitops-argocd/`
 - `/archive/2026-04-cleanup/04-observability (archived)/`
-- `/terraform/05-infra-cicd/`
+- `/terraform/04-infra-cicd/`
 - `/apps/webapp/`
 - `/qa/`, `/kubernetes/`, `/ci-cd/`, `/docs/`
 

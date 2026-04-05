@@ -38,7 +38,7 @@ The portfolio covers:
   - Argo CD installation and bootstrap application
 - `archive/2026-04-cleanup/04-observability (archived)`
   - CloudWatch dashboards and alarms
-- `terraform/05-infra-cicd`
+- `terraform/04-infra-cicd`
   - CodePipeline and CodeBuild for infra CI/CD
 - `apps/webapp`
   - Node.js web app with unit and UI tests
