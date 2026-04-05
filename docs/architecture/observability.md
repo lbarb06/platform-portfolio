@@ -6,7 +6,7 @@ Ensure platform and application health can be detected, visualized, and acted on
 
 ## Current Coverage
 
-From `terraform/04-observability`:
+From `archive/2026-04-cleanup/04-observability (archived)`:
 
 - CloudWatch dashboard for ALB, ASG, and RDS
 - Alarms for ALB 5xx and latency

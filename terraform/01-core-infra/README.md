@@ -94,7 +94,7 @@ terraform destroy
 
 - `terraform/02-k8s-platform`: EKS + ECR + GitHub OIDC
 - `terraform/03-gitops-argocd`: Argo CD bootstrap for EKS
-- `terraform/04-observability`: CloudWatch dashboards and alarms
+- `archive/2026-04-cleanup/04-observability (archived)`: CloudWatch dashboards and alarms
 - `terraform/05-infra-cicd`: CodePipeline/CodeBuild for infra workflows
 
 ## Recommended Apply Order
@@ -102,5 +102,5 @@ terraform destroy
 1. `terraform/01-core-infra`
 2. `terraform/02-k8s-platform`
 3. `terraform/03-gitops-argocd`
-4. `terraform/04-observability`
+4. `archive/2026-04-cleanup/04-observability (archived)`
 5. `terraform/05-infra-cicd`
