@@ -11,7 +11,7 @@ Implemented now:
 - `terraform/01-core-infra`: VPC, ALB, ASG/EC2 runtime, RDS, Secrets Manager, optional Route53
 - `terraform/02-k8s-platform`: EKS, ECR, GitHub OIDC role
 - `terraform/03-gitops-argocd`: Argo CD install and app bootstrap path
-- `terraform/04-observability`: CloudWatch dashboard and alarms
+- `archive/2026-04-cleanup/04-observability (archived)`: CloudWatch dashboard and alarms
 - `.github/workflows/webapp-cicd.yml`: test, build, ECR push, GitOps manifest update
 
 Target direction:
@@ -36,7 +36,7 @@ The portfolio covers:
   - EKS cluster, node groups, ECR, GitHub OIDC role
 - `terraform/03-gitops-argocd`
   - Argo CD installation and bootstrap application
-- `terraform/04-observability`
+- `archive/2026-04-cleanup/04-observability (archived)`
   - CloudWatch dashboards and alarms
 - `terraform/05-infra-cicd`
   - CodePipeline and CodeBuild for infra CI/CD

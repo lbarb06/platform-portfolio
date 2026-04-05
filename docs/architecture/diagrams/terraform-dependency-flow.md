@@ -4,7 +4,7 @@
 flowchart TD
   A[terraform/01-core-infra\nVPC ALB ASG RDS Secrets DNS] --> B[terraform/02-k8s-platform\nEKS ECR OIDC]
   B --> C[terraform/03-gitops-argocd\nArgo CD + App Bootstrap]
-  A --> D[terraform/04-observability\nCloudWatch Dashboards + Alarms]
+  A --> D[archive/2026-04-cleanup/04-observability (archived)\nCloudWatch Dashboards + Alarms]
   A --> E[terraform/05-infra-cicd\nCodePipeline + CodeBuild]
 
   B -. reads remote state from .-> A
@@ -18,13 +18,13 @@ flowchart TD
 1. `terraform/01-core-infra`
 2. `terraform/02-k8s-platform`
 3. `terraform/03-gitops-argocd`
-4. `terraform/04-observability`
+4. `archive/2026-04-cleanup/04-observability (archived)`
 5. `terraform/05-infra-cicd`
 
 ## Recommended Destroy Order
 
 1. `terraform/05-infra-cicd`
-2. `terraform/04-observability`
+2. `archive/2026-04-cleanup/04-observability (archived)`
 3. `terraform/03-gitops-argocd`
 4. `terraform/02-k8s-platform`
 5. `terraform/01-core-infra`
