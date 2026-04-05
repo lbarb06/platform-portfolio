@@ -8,7 +8,7 @@ This repository is organized as a single monorepo for infrastructure, applicatio
 - `terraform/02-k8s-platform`: EKS, ECR, GitHub OIDC role for CI image push
 - `terraform/03-gitops-argocd`: Argo CD install and GitOps app bootstrap
 - `archive/2026-04-cleanup/04-observability (archived)`: CloudWatch dashboards and alarms
-- `terraform/05-infra-cicd`: AWS CodePipeline/CodeBuild for Terraform workflows
+- `terraform/04-infra-cicd`: AWS CodePipeline/CodeBuild for Terraform workflows
 - `apps/webapp`: Node.js webapp with unit and UI tests
 - `qa/`: test suites and shared test data
 - `kubernetes/`: runbooks, troubleshooting notes, and incident drills
@@ -21,7 +21,7 @@ This repository is organized as a single monorepo for infrastructure, applicatio
 2. `terraform/02-k8s-platform`
 3. `terraform/03-gitops-argocd`
 4. `archive/2026-04-cleanup/04-observability (archived)`
-5. `terraform/05-infra-cicd`
+5. `terraform/04-infra-cicd`
 
 ## App Delivery Flow
 
